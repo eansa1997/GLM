@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemToDatabaseActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemTypeRecyclerView"
+        android:layout_width="407dp"
+        android:layout_height="509dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/addItemToDatabaseReturnToListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemToDatabaseTextview" />
+
+    <Button
+        android:id="@+id/addItemToDatabaseReturnToListButton"
+        android:layout_width="235dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="casual"
+        android:text="Return To List"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addItemToDatabaseTextview"
+        android:layout_width="386dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="21dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

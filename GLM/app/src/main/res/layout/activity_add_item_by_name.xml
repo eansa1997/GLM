@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemByNameActivity">
+
+    <EditText
+        android:id="@+id/searchItemByNameEditText"
+        android:layout_width="315dp"
+        android:layout_height="47dp"
+        android:hint="Enter Item Name Here"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchItemByNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/AddItemByNameRecyclerView"
+        android:layout_width="402dp"
+        android:layout_height="489dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/addItemByNameReturnToListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/addItemByNameCreateButton"
+        android:layout_width="248dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="casual"
+        android:text="Create New Item"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addItemByNameReturnToListButton"
+        android:layout_width="117dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="casual"
+        android:text="Return to List"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
